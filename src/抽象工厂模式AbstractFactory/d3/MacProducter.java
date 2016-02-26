@@ -7,6 +7,10 @@ public class MacProducter extends ComputerProducter {
 
     }
 
+    public Cpu createCpc() {
+        return new MacCpu();
+    }
+
     public static MacProducter getInstance() {
         return m_MacProducter;
     }
