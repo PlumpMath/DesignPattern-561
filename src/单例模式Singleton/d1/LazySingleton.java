@@ -7,7 +7,7 @@ public class LazySingleton {
 
     }
 
-    synchronized public static LazySingleton getInstance() {
+    public synchronized static LazySingleton getInstance() {
         if (m_LazySingleton == null) {
             m_LazySingleton = new LazySingleton();
         }
